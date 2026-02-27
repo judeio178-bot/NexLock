@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyLock — Protection at your fingertips</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Subtle background grid + glow layers -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--a" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--b" aria-hidden="true"></div>
+
+  <!-- A) Sticky Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#home" class="logo-link">
+        <img src="assets/logo.png" alt="EasyLock" class="logo">
+      </a>
+      <nav class="nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#research" class="nav-link">Research</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="theme-toggle" aria-label="Toggle light/dark theme">
+          <span class="theme-icon sun">☀</span>
+          <span class="theme-icon moon">☾</span>
+        </button>
+        <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" aria-hidden="true">
+    <nav class="mobile-nav">
+      <a href="#home" class="mobile-nav-link">Home</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#research" class="mobile-nav-link">Research</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- B) Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-glow"></div>
+      <div class="container hero-content">
+        <div class="hero-badge reveal" data-reveal="fade-up">
+          <span class="badge-dot" aria-hidden="true"></span>
+          <span>Biometric • One‑Touch • Secure</span>
+        </div>
+        <h1 class="hero-title reveal" data-reveal="fade-up" data-delay="80">Protection at your fingertips.</h1>
+        <p class="hero-subtitle reveal" data-reveal="fade-up" data-delay="160">Modern security that’s trusted, secure, and easy to use. A smooth experience you can rely on.</p>
+        <div class="hero-buttons reveal" data-reveal="fade-up" data-delay="240">
+          <a href="#contact" class="btn btn-primary">Contact</a>
+          <a href="#research" class="btn btn-secondary">View Research</a>
+        </div>
+
+        <div class="hero-metrics reveal" data-reveal="fade-up" data-delay="320">
+          <div class="metric"><span class="metric-k">1</span><span class="metric-l">Touch access</span></div>
+          <div class="metric"><span class="metric-k">Fast</span><span class="metric-l">Setup</span></div>
+          <div class="metric"><span class="metric-k">Safe</span><span class="metric-l">Control</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- C) About Section -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">About EasyLock</h2>
+        <p class="about-intro">
+          EasyLock was created through user research and design thinking to make childproofing easier, safer, and more reliable for families.
+          Our goal is to design a solution that parents can trust without sacrificing convenience or simplicity.
+        </p>
+
+        <div class="creators">
+          <h3 class="creators-heading">Meet the Creators</h3>
+          <div class="creators-grid">
+            <article class="creator-card reveal" data-reveal="fade-up">
+              <img src="assets/jude-ornstein.png" alt="Portrait of Jude Ornstein" class="creator-image">
+              <h4 class="creator-name">Jude Ornstein</h4>
+              <p class="creator-meta">Class of 2027</p>
+            </article>
+            <article class="creator-card reveal" data-reveal="fade-up" data-delay="80">
+              <img src="assets/dov-brown.png" alt="Portrait of Dov Brown" class="creator-image">
+              <h4 class="creator-name">Dov Brown</h4>
+              <p class="creator-meta">Class of 2027</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- D) Research Section -->
+    <section id="research" class="section">
+      <div class="container">
+        <h2 class="section-title">User Research Insights</h2>
+        <p class="research-intro">
+          Parents prioritize ease of use, simple installation, and reliability over cost. Many parents rely on frequent checking instead of trusting
+          current childproofing solutions, revealing flaws in existing products rather than lack of responsibility.
+        </p>
+
+        <div class="research-grid">
+          <article class="research-card reveal" data-reveal="fade-up">
+            <div class="research-image-wrapper">
+              <img src="assets/feature_priorities.png" alt="Chart showing feature priorities from parent surveys" class="research-image">
+            </div>
+            <p class="research-caption">Feature priorities from parent surveys</p>
+          </article>
+
+          <article class="research-card reveal" data-reveal="fade-up" data-delay="80">
+            <div class="research-image-wrapper">
+              <img src="assets/checking_behavior.png" alt="Visualization of cabinet checking habits" class="research-image">
+            </div>
+            <p class="research-caption">Cabinet checking habits</p>
+          </article>
+
+          <article class="research-card reveal" data-reveal="fade-up" data-delay="120">
+            <div class="research-image-wrapper">
+              <img src="assets/risk_areas_donut.png" alt="Donut chart of highest-risk cabinet locations" class="research-image">
+            </div>
+            <p class="research-caption">Highest-risk cabinet locations</p>
+          </article>
+
+          <article class="research-card reveal" data-reveal="fade-up" data-delay="160">
+            <div class="research-image-wrapper">
+              <img src="assets/pain_points.png" alt="Diagram of common frustrations with current locks" class="research-image">
+            </div>
+            <p class="research-caption">Common frustrations with current locks</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- E) Contact Section -->
+    <section id="contact" class="contact section section-alt">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-email">
+          <a href="mailto:ornsteinj27@goastudent.org">ornsteinj27@goastudent.org</a>
+        </p>
+        <form class="contact-form reveal" data-reveal="fade-up" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error-message" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <span class="error-message" role="alert"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="demo-message" aria-live="polite" hidden>
+          Demo only — please email us at <a href="mailto:ornsteinj27@goastudent.org">ornsteinj27@goastudent.org</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- F) Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <img src="assets/logo.png" alt="EasyLock" class="footer-logo">
+      <p class="footer-tagline">Modern security with a smooth, easy look.</p>
+      <a href="#home" class="back-to-top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
